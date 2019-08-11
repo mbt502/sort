@@ -3,11 +3,7 @@ s = begin.read().split()
 begin.close()
 
 
-a = []
-b = []
-c = []
-d = []
-e = []
+a,b,c,d,e = [],[],[],[],[]
 
 
 for i in s:# первоначальная сортировка на слова, цифры и слова со знаками
@@ -55,6 +51,7 @@ c.sort()
 
 
 res = open('begin.txt','a')#запись в файл
+res.write('\n')
 res.write('\n')
 for i in a,b,c:
     for j in i:
